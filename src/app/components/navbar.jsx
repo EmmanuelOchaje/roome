@@ -21,7 +21,11 @@ export default function Navbar() {
           className="md:hidden text-stone-600"
           onClick={() => setMenuOpen(!menuOpen)}
         >
-          {menuOpen ? <img src={close} alt="" /> : <img src={menu} alt="" />}
+          {menuOpen ? (
+            <img src={close} alt="" className="w-5 h-5" />
+          ) : (
+            <img src={menu} alt="" className="w-5 h-5" />
+          )}
         </button>
 
         {/* Logo */}
@@ -58,7 +62,7 @@ export default function Navbar() {
 
         {/* Cart icon on mobile */}
         <Link to="/cart" className="relative md:hidden text-stone-600">
-          <img src={cart} alt="" />
+          <img src={cart} alt="" className="w-5 h-5" />
           {cartCount > 0 && (
             <span className="absolute -top-2 -right-2 bg-stone-800 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">
               {cartCount}
