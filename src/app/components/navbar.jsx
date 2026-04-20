@@ -76,17 +76,8 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {menuOpen && (
         <div className="md:hidden border-t border-stone-100 px-6 py-4 flex flex-col gap-3 text-sm text-stone-600">
-          <Link to="/" onClick={() => setMenuOpen(false)}>
-            Home
-          </Link>
           <Link to="/orders" onClick={() => setMenuOpen(false)}>
             Orders
-          </Link>
-          <Link to="/login" onClick={() => setMenuOpen(false)}>
-            Login
-          </Link>
-          <Link to="/register" onClick={() => setMenuOpen(false)}>
-            Register
           </Link>
         </div>
       )}
