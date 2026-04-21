@@ -1,18 +1,26 @@
-# React + Vite
+# Roomé — Interior, Elevated
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interior decor e-commerce web app built with React. Browse premium furniture and lighting, manage your cart, and place orders — all from a clean, minimal interface.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** [roome-three.vercel.app](https://roome-three.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Auth-protected routes (login required to access the app)
+- Browse 30 curated interior products across Chairs and Lighting
+- Filter by category and search by name
+- Cart with quantity controls and real-time totals
+- Checkout with shipping form and payment method selection
+- Order history with itemized breakdowns
+- Auth state persisted via localStorage
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## Tech Stack
 
-Note: This will impact Vite dev & build performances.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Layer            | Technology      |
+| ---------------- | --------------- |
+| Framework        | React + Vite    |
+| State Management | Redux Toolkit   |
+| Routing          | React Router v6 |
+| Styling          | Tailwind CSS v4 |
+| Persistence      | localStorage    |
+| Deployment       | Vercel          |
